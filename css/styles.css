@@ -213,3 +213,40 @@ body{
   .case-links{justify-content:flex-start}
   .case-study-topline{margin-bottom:28px}
 }
+
+/* ===== DevReady case v6 ===== */
+.case-study-devready-media{background:#0d0e24}
+.devready-visual{
+  position:relative;width:100%;min-height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;overflow:hidden;
+  background:
+    radial-gradient(circle at 35% 35%,rgba(119,85,232,.35),transparent 16rem),
+    radial-gradient(circle at 75% 65%,rgba(232,100,29,.22),transparent 17rem),
+    linear-gradient(135deg,#0d0e24,#17172f 60%,#111126)
+}
+.devready-visual::before{
+  content:"";position:absolute;inset:0;opacity:.18;
+  background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+  background-size:42px 42px
+}
+.devready-brand{position:absolute;top:28px;left:28px;display:flex;align-items:center;gap:10px;z-index:2}
+.devready-brand strong{font-family:'Space Grotesk',Inter,sans-serif;font-size:1.35rem;letter-spacing:-.03em}
+.devready-logo-mark{
+  display:grid;place-items:center;min-width:46px;height:38px;padding:0 9px;border-radius:10px;
+  color:#fff;font-weight:900;font-size:.82rem;
+  background:linear-gradient(135deg,#7755e8,#e8641d)
+}
+.devready-mascot{
+  position:relative;z-index:1;width:min(62%,340px);height:auto;object-fit:contain!important;
+  filter:drop-shadow(0 28px 32px rgba(0,0,0,.35))
+}
+.case-study-devready .project-badge{background:rgba(13,14,36,.88)}
+@media(max-width:980px){
+  .devready-visual{min-height:420px}
+  .devready-mascot{width:min(54%,300px)}
+}
+@media(max-width:680px){
+  .devready-visual{min-height:330px}
+  .devready-brand{top:18px;left:18px}
+  .devready-mascot{width:min(62%,250px)}
+}
