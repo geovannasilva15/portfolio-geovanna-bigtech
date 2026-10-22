@@ -170,3 +170,14 @@ button{font:inherit}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
 }
+/* v11 profile + Neural leadership */
+.neural-media{position:relative}
+.project-highlight{
+  position:absolute;left:18px;right:18px;bottom:18px;
+  padding:14px 16px;border:1px solid rgba(255,255,255,.14);
+  border-radius:11px;background:rgba(7,9,13,.86);backdrop-filter:blur(10px);
+  display:grid;gap:3px
+}
+.project-highlight strong{font-size:.86rem;color:#fff}
+.project-highlight span{font-size:.72rem;color:var(--pink-soft);font-weight:800;text-transform:uppercase;letter-spacing:.07em}
+.hero-photo img{background:#10151d}
