@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="./css/styles.css?v=4" />
+  <link rel="stylesheet" href="./css/styles.css?v=5" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -53,7 +53,7 @@
           <div class="typing-panel reveal reveal-delay-3"><span data-i18n="typingLabel">Foco atual</span><strong id="typing-text">IA aplicada a negócios</strong></div>
           <div class="actions reveal reveal-delay-4">
             <a class="btn btn-primary" href="#projects" data-i18n="heroBtnProjects">Ver projetos com impacto</a>
-            <a class="btn" href="#hackathon" data-i18n="heroBtnHackathon">Conhecer case hackathon</a>
+            <a class="btn" href="#cases" data-i18n="heroBtnHackathon">Ver estudos de caso</a>
           </div>
           <div class="hero-proof reveal reveal-delay-5">
             <span><strong>02</strong> hackathons com pódio</span>
@@ -226,22 +226,76 @@
       </div>
     </section>
 
-    <section class="section" id="hackathon">
-      <div class="container case-grid">
-        <div class="case-header reveal">
-          <p class="eyebrow"><span class="section-no">07</span><span data-i18n="hackEyebrow">Case de liderança • Neural Rose</span></p>
-          <h2 class="section-title" data-i18n="hackTitle">Primeiro hackathon. Liderança do time. Única equipe 100% feminina. 2º lugar.</h2>
-          <p class="section-lead" data-i18n="hackLead">No Hackathon WeHandle × PUC Campinas 2026, liderei a equipe Neural Rose na construção de uma solução preditiva para análise de risco de fornecedores. Em poucas horas, transformamos um problema de negócio em proposta, interface, narrativa e demonstração.</p>
-          <a class="case-preview-link" href="https://github.com/geovannasilva15/Neural-rose" target="_blank" rel="noopener">
-            <img src="https://raw.githubusercontent.com/geovannasilva15/Neural-rose/main/neural-rose-ai-fornecedores/assets/banner-neural-rose.svg" alt="Banner real do Neural Rose" loading="lazy" />
-          </a>
+    <section class="section case-studies" id="cases">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="section-no">07</span><span data-i18n="casesEyebrow">Selected Work</span></p>
+          <h2 class="section-title" data-i18n="casesTitle">Três projetos que mostram como penso produto, tecnologia e impacto.</h2>
+          <p class="section-lead" data-i18n="casesLead">Cada case parte de um problema real, explicita minha contribuição e mostra a solução construída com evidências do próprio projeto.</p>
         </div>
-        <div class="case-card reveal reveal-delay-1">
-          <article><span>01</span><h3 data-i18n="hack1Title">Problema</h3><p data-i18n="hack1Text">Antecipar riscos de fornecedores antes que impactem contratos, reputação ou continuidade operacional.</p></article>
-          <article><span>02</span><h3 data-i18n="hack2Title">Produto</h3><p data-i18n="hack2Text">Dashboard executivo com score de risco, projeção futura, alertas preventivos, ranking, simulador What-If e investigação assistida.</p></article>
-          <article><span>03</span><h3 data-i18n="hack3Title">Minha liderança</h3><p data-i18n="hack3Text">Coordenei priorização, estrutura da solução, alinhamento do time, narrativa de valor e apresentação da proposta.</p></article>
-          <article><span>04</span><h3 data-i18n="hack4Title">Resultado</h3><p data-i18n="hack4Text">2º lugar no hackathon e uma experiência concreta de liderança feminina, produto e execução sob pressão.</p></article>
-        </div>
+
+        <article class="case-study case-study-featured reveal">
+          <div class="case-study-media">
+            <img src="https://raw.githubusercontent.com/geovannasilva15/Neural-rose/main/assets/readme-project-overview.svg" alt="Visão do projeto Neural Rose" loading="lazy" />
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-topline"><span>01</span><span>AI Product • Risk Intelligence • Leadership</span></div>
+            <h3>Neural Rose</h3>
+            <p class="case-study-summary" data-i18n="case1Summary">Plataforma de inteligência preditiva criada no Hackathon WeHandle × PUC Campinas 2026 para antecipar riscos de fornecedores antes que afetem contratos, reputação ou continuidade operacional.</p>
+            <dl class="case-study-grid">
+              <div><dt data-i18n="caseProblem">Problema</dt><dd data-i18n="case1Problem">Transformar dados dispersos de fornecedores em sinais úteis para compras, compliance e gestão de terceiros.</dd></div>
+              <div><dt data-i18n="caseContribution">Minha contribuição</dt><dd data-i18n="case1Contribution">Liderei a organização do time, a priorização da solução, a narrativa de valor e a apresentação do produto.</dd></div>
+              <div><dt data-i18n="caseBuild">Construção</dt><dd data-i18n="case1Build">Dashboard executivo, score de risco, projeção futura, alertas, ranking, simulador What-If e investigação assistida.</dd></div>
+              <div><dt data-i18n="caseOutcome">Resultado</dt><dd data-i18n="case1Outcome">2º lugar no hackathon e experiência concreta de liderança do único time 100% feminino da competição.</dd></div>
+            </dl>
+            <div class="case-study-footer">
+              <div class="tags"><span>JavaScript</span><span>Chart.js</span><span>Tailwind CSS</span><span>UX/UI</span></div>
+              <a class="case-link" href="https://github.com/geovannasilva15/Neural-rose" target="_blank" rel="noopener">Abrir repositório ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-study reveal">
+          <div class="case-study-media">
+            <img src="https://raw.githubusercontent.com/geovannasilva15/proof-before-post/main/assets/readme-project-overview.svg" alt="Visão do projeto Proof Before Post" loading="lazy" />
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-topline"><span>02</span><span>GenAI • Media Literacy • Product UX</span></div>
+            <h3>Proof Before Post</h3>
+            <p class="case-study-summary" data-i18n="case2Summary">Plataforma bilíngue de educação midiática que ajuda criadores a revisar evidências antes de publicar, mantendo a decisão editorial sob controle humano.</p>
+            <dl class="case-study-grid">
+              <div><dt data-i18n="caseProblem">Problema</dt><dd data-i18n="case2Problem">Criadores precisam verificar afirmações, comparar fontes e registrar evidências sem transformar a IA em árbitro do que é verdadeiro.</dd></div>
+              <div><dt data-i18n="caseContribution">Minha contribuição</dt><dd data-i18n="case2Contribution">Participei da concepção e desenvolvimento do fluxo de análise, revisão e evidência, com foco em clareza, segurança e uso responsável de IA.</dd></div>
+              <div><dt data-i18n="caseBuild">Construção</dt><dd data-i18n="case2Build">Pesquisa com links verificáveis, comparação de fontes, avaliação humana, Evidence Receipt, exportação e histórico privado.</dd></div>
+              <div><dt data-i18n="caseOutcome">Resultado</dt><dd data-i18n="case2Outcome">Produto funcional publicado, bilíngue, com testes de produto e fluxo E2E, pronto para demonstração pública.</dd></div>
+            </dl>
+            <div class="case-study-footer">
+              <div class="tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>OpenAI API</span><span>Playwright</span></div>
+              <div class="case-links"><a class="case-link" href="https://proof-before-post.vercel.app/" target="_blank" rel="noopener">Ver produto ↗</a><a class="case-link" href="https://github.com/geovannasilva15/proof-before-post" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-study reveal">
+          <div class="case-study-media">
+            <img src="https://raw.githubusercontent.com/geovannasilva15/clarivoz/main/docs/screenshots/inicio.png" alt="Tela inicial real do ClariVoz" loading="lazy" />
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-topline"><span>03</span><span>Accessibility • Assistive Tech • Frontend</span></div>
+            <h3>ClariVoz</h3>
+            <p class="case-study-summary" data-i18n="case3Summary">Tecnologia assistiva pensada para pessoas com dificuldades de leitura ou compreensão, reunindo voz, simplificação de conteúdo e ajustes visuais em uma experiência direta.</p>
+            <dl class="case-study-grid">
+              <div><dt data-i18n="caseProblem">Problema</dt><dd data-i18n="case3Problem">Conteúdos digitais podem criar barreiras para pessoas com baixa alfabetização, idosos ou usuários com dificuldade de compreensão.</dd></div>
+              <div><dt data-i18n="caseContribution">Minha contribuição</dt><dd data-i18n="case3Contribution">Estruturei a proposta, experiência e implementação do protótipo com foco em autonomia, leitura e acessibilidade prática.</dd></div>
+              <div><dt data-i18n="caseBuild">Construção</dt><dd data-i18n="case3Build">Leitura em voz alta, simplificação de textos, controles de tamanho e contraste, navegação responsiva e por teclado.</dd></div>
+              <div><dt data-i18n="caseOutcome">Resultado</dt><dd data-i18n="case3Outcome">Protótipo funcional publicado no GitHub Pages com fluxo demonstrável e recursos de acessibilidade reunidos em uma única interface.</dd></div>
+            </dl>
+            <div class="case-study-footer">
+              <div class="tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Tailwind CSS 4</span><span>Web Speech API</span></div>
+              <div class="case-links"><a class="case-link" href="https://geovannasilva15.github.io/clarivoz/" target="_blank" rel="noopener">Ver protótipo ↗</a><a class="case-link" href="https://github.com/geovannasilva15/clarivoz" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -265,6 +319,6 @@
 
   <footer class="site-footer"><div class="container footer-grid"><div><strong>Geovanna Silva</strong><p data-i18n="footerRole">IA • Software • Dados • Negócios</p></div><p>© <span id="year"></span> <span data-i18n="footerRights">Todos os direitos reservados.</span></p></div></footer>
   <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
-  <script src="./js/main.js?v=4"></script>
+  <script src="./js/main.js?v=5"></script>
 </body>
 </html>
